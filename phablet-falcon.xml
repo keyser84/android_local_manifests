@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="git://github.com/" />
+  
+  <!-- kernel -->
+  <project name="keyser84/android_kernel_motorola_msm8226" path="kernel/motorola/msm8226" remote="github" revision="phablet-falcon" />
+  
+  <!-- device -->
+  <project name="keyser84/android_device_motorola_falcon" path="device/motorola/falcon" remote="github" revision="phablet-falcon" />
+  <project name="keyser84/android_device_motorola_msm8226-common" path="device/motorola/msm8226-common" remote="github" revision="phablet-falcon" />
+  <project name="keyser84/android_device_qcom_common" path="device/qcom/common" remote="github" revision="phablet-falcon" />
+  
+  <!-- hardware/qcom dependencies -->
+  <project name="CyanogenMod/android_hardware_qcom_display-caf-new" path="hardware/qcom/display-caf-new" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_hardware_qcom_media-caf-new" path="hardware/qcom/media-caf-new" remote="github" revision="cm-11.0" />
+  <!-- <project name="CyanogenMod/android_hardware_qcom_fm" path="hardware/qcom/fm" remote="github" revision="cm-11.0" /> -->
+  
+  <!-- vendor -->
+  <project name="keyser84/proprietary_vendor_motorola_falcon" path="vendor/motorola/falcon" remote="github" revision="phablet-falcon" />
+  <project name="keyser84/proprietary_vendor_motorola_msm8226-common" path="vendor/motorola/msm8226-common" remote="github" revision="phablet-falcon" />
+  
+  <!-- build replacement -->
+  <remove-project name="aosp/platform/build" />
+  <project name="keyser84/android_build" path="build" remote="github" revision="phablet-falcon" />
+  
+  <!-- system replacements -->
+  <remove-project name="aosp/platform/system/core" />
+  <project name="keyser84/android_system_core" path="system/core" remote="github" revision="phablet-falcon" />
+  
+  <!-- hardware/qcom replacements -->
+  <remove-project name="aosp/platform/hardware/qcom/audio" />
+  <project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio" remote="github" revision="cm-11.0" />
+  <remove-project name="aosp/platform/hardware/qcom/bt" />
+  <project name="CyanogenMod/android_hardware_qcom_bt" path="hardware/qcom/bt" remote="github" revision="cm-11.0" />
+  <remove-project name="aosp/platform/hardware/qcom/camera" />  
+  <project name="CyanogenMod/android_hardware_qcom_camera" path="hardware/qcom/camera" remote="github" revision="cm-11.0" />
+  <remove-project name="aosp/platform/hardware/qcom/display" />  
+  <project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display" remote="github" revision="cm-11.0" />
+  <remove-project name="aosp/platform/hardware/qcom/keymaster" />
+  <project name="CyanogenMod/android_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="github" revision="cm-11.0" />
+  <remove-project name="aosp/platform/hardware/qcom/media" />
+  <project name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media" remote="github" revision="cm-11.0" />
+  <remove-project name="aosp/platform/hardware/qcom/msm8960" />
+  <project name="CyanogenMod/android_hardware_qcom_msm8960" path="hardware/qcom/msm8960" remote="github" revision="cm-11.0" />
+  <remove-project name="aosp/platform/hardware/qcom/msm8x74" />
+  <project name="CyanogenMod/android_hardware_qcom_msm8x74" path="hardware/qcom/msm8x74" remote="github" revision="cm-11.0" />
+  <remove-project name="aosp/platform/hardware/qcom/power" />
+  <project name="CyanogenMod/android_hardware_qcom_power" path="hardware/qcom/power" remote="github" revision="cm-11.0" />
+  <remove-project name="aosp/platform/hardware/qcom/sensors" />
+  <project name="CyanogenMod/android_hardware_qcom_sensors" path="hardware/qcom/sensors" remote="github" revision="cm-11.0" />
+  <remove-project name="aosp/platform/hardware/qcom/wlan" />
+  <project name="CyanogenMod/android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="github" revision="cm-11.0" />
+  
+  <!-- hardware/qcom additions -->
+  <project name="CyanogenMod/android_hardware_qcom_gps" path="hardware/qcom/gps" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_hardware_qcom_display-caf" path="hardware/qcom/display-caf" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_hardware_qcom_media-caf" path="hardware/qcom/media-caf" remote="github" revision="cm-11.0" />
+  
+  <!-- external additions-->
+  <project name="CyanogenMod/android_external_f2fs-tools" path="external/f2fs-tools" remote="github" revision="cm-11.0" />
+  
+</manifest>
